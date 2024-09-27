@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новая заявка - Help!!!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Логотип и заголовок страницы -->
+        <img src="1.jpg" alt="Help Desk" class="header-img">
+        <h1>Сервис техподдержки "Help!!!"</h1>
+    </header>
+    <nav>
+        <!-- Навигационное меню -->
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="register.html">Регистрация</a></li>
+            <li><a href="login.html">Авторизация</a></li>
+            <li><a href="tickets.html">Мои заявки</a></li>
+            <li><a href="new-ticket.html">Новая заявка</a></li>
+            <li><a href="admin.html">Панель администратора</a></li>
+        </ul>
+    </nav>
+
+    <!-- Основной контент страницы -->
+    <section>
+        <h2>Создать новую заявку</h2>
+        <!-- Форма для создания новой заявки -->
+        <form action="/submit_ticket" method="post">
+            <label for="title">Название заявки:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="description">Описание:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <label for="priority">Приоритет:</label>
+            <select id="priority" name="priority">
+                <option value="low">Низкий</option>
+                <option value="medium">Средний</option>
+                <option value="high">Высокий</option>
+            </select>
+
+            <button type="submit">Создать заявку</button>
+        </form>
+    </section>
+
+    <!-- Подвал сайта -->
+    <footer>
+        <img src="2.jpg" alt="Contact Us" class="footer-img">
+        <p>Контактная информация &copy; 2024</p>
+    </footer>
