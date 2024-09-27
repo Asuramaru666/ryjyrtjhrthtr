@@ -1,0 +1,284 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Shinobi hub</title>
+    </head>
+    <style>
+        html {
+            background-color: white;
+            width: auto;
+            font-family: sans-serif;
+            color: black;
+            height: 2164px;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        a:link {
+            text-decoration: none;
+            color: white;
+        }
+        a:visited {
+            text-decoration: none;
+            color: white;
+        }
+        .headtop {
+            width: 1560px;
+            height: 100px;
+            position: fixed;
+            z-index: 10;
+            float: right;
+            font-family: sans-serif;
+            background-color: rgba(0, 0, 0, 0.8);
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .toplogo {
+            width: 400px;
+            margin: 10px 0 0 50px;
+            float: left;
+            display: inline-block;
+        }
+        .toptext {
+            font-size: 40px;
+            float: left;
+            display: inline-block;
+            color: white;
+            margin: 27px 50px 0 100px;
+        }
+        .headright {
+            width: 343px;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 1560px;
+            float: right;
+            font-family: monospace;
+            text-decoration: none;
+            background-color: black;
+            white-space: nowrap;
+            z-index: 11;
+            box-shadow: -10px 0 20px rgba(65, 255, 81, 0.3);
+        }
+        .rightlogo {
+            width: 300px;
+            margin: 20px 0 50px 20px;
+            float: left;
+            display: inline-block;
+        }
+        .main {
+            font-size: 35px;
+            float: left;
+            display: inline-block;
+            margin: 0 50px 0 70px;
+            width: 200px;
+            padding: 0 0 5px 0;
+            text-align: center;
+            border-bottom: 2px solid #41FF51;
+        }
+        .about {
+            font-size: 35px;
+            float: left;
+            display: inline-block;
+            margin: 20px 50px 0 90px;
+            width: 160px;
+            padding: 0 0 5px 0;
+            text-align: center;
+            border-bottom: 2px solid #41FF51;
+        }
+        .contacts {
+            font-size: 35px;
+            float: left;
+            display: inline-block;
+            margin: 20px 50px 0 70px;
+            width: 200px;
+            padding: 0 0 5px 0;
+            text-align: center;
+            border-bottom: 2px solid #41FF51;
+        }
+        .partners {
+            font-size: 35px;
+            float: left;
+            display: inline-block;
+            margin: 20px 50px 0 70px;
+            width: 200px;
+            padding: 0 0 5px 0;
+            text-align: center;
+            border-bottom: 2px solid #41FF51;
+        }
+        .registration {
+            font-size: 22px;
+            float: left;
+            display: inline-block;
+            margin: 322px 0 0 0;
+            padding: 12px 62px;
+            border-radius: 0;
+            background-color: rgba(65, 255, 81, 0.2);
+        }
+        .back {
+            position: relative;
+            width: 1560px;
+            float: left;
+            filter: brightness(40%);
+        }
+        .block1 {
+            height: 1560px;
+            z-index: 2;
+            height: 1040px;
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .text1 {
+            position: absolute;
+            width: 700px;
+            font-size: 70px;
+            font-weight: bold;
+            left: 430px;
+            top: 270px;
+            text-align: center;
+            display: inline-block;
+        }
+        .block2 {
+            width: 1560px;
+            height: 80px;
+            z-index: 3;
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            border-top: 2px solid #41FF51;
+            border-bottom: 2px solid #41FF51;
+            box-shadow: -3px 0 40px rgba(65, 255, 81, 0.3);
+            background-color: black;
+            color: white;
+        }
+        .text2 {
+            position: absolute;
+            top: 200px;
+            width: 1000px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            margin: 0 0 0 250px;
+            line-height: 1.5;
+        }
+        .block3 {
+            width: 1560px;
+            height: 150px;
+            z-index: 2;
+            margin: -4px 0 0 0;
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+        .footer {
+            width: 1560px;
+            height: 80px;
+            position: absolute;
+            text-align: center;
+            font-size: 30px;
+            z-index: 3;
+            top: 2083px;
+            margin: 0 0 0 0;
+            background-color: black;
+            border-top: 2px solid #41FF51;
+            box-shadow: -20px -2px 40px rgba(65, 255, 81, 0.3);
+        }
+        .foot1 {
+            margin: 30px 0 0 20px;
+            font-size: 20px;
+            color: white;
+            float: left;
+            display: inline-block;
+        }
+        .foot2 {
+            margin: 22px 240px 0 50px;
+            width: 100px;
+            text-decoration: underline;
+            float: right;
+            color: white;
+            display: inline-block;
+        }
+    </style>
+    <body>
+        <div>
+            <div class = headtop>
+                <div class = toplogo>
+                    <img src = glogo3.png width = 100%>
+                </div>
+                <div class = toptext>
+                    Оставь <b>свой</b> след в киберспорте!
+                </div>
+            </div>
+            <div class = headright>
+                <div class = rightlogo>
+                    <img src = glogo1.png width = 300px>
+                </div>
+                <div class = main>
+                    <a href = main.html>
+                        ГЛАВНАЯ
+                    </a>
+                </div>
+                <div class = about>
+                    <a href = about.html>
+                        О НАС
+                    </a>
+                </div>
+                <div class = contacts>
+                    <a href = contacts.html>
+                        КОНТАКТЫ
+                    </a>
+                </div>
+                <div class = partners>
+                    <a href = partners.html>
+                        ПАРТНЕРЫ
+                    </a>
+                </div>
+                <div class = registration>
+                    <a href = registration.html>
+                        ЗАРЕГИСТРИРОВАТЬСЯ
+                    </a>
+                </div>
+            </div>
+            <div class = block1>
+                <img class = back src = background2.jpg>
+                <div class = text1>
+                    <font color = #41FF51>Shinobi hub</font> Побеждай с удовольствием!
+                </div>
+            </div>
+            <div class = block2>
+                <div>
+                    <h1>О киберспортивной лиге <font color = #41FF51>Shinobi hub</font></h1>
+                </div>
+            </div>
+            <div class = block3>
+                <img class = back src = background3.jpg>
+                <div class = text2>
+                    <font color = #41FF51>
+                        Shinobi hub
+                    </font>
+                    — одна из крупнейших сибирских киберспортивных лиг, предоставляющая возможность участвовать всем игрокам в масштабных соревнованиях, начиная с быстрых матчей в ладдерах и заканчивая ежедневными турнирами и лигами.
+                    <br>
+                    <h5>
+                        Более 7 лет занимаемся развитием российского массового киберспорта: провели более 400 турниров с 120 000 участников, разыграли более 30 млн. руб. призовых.
+                    </h5>
+                    <h5>
+                        Игровые сервера находятся в Российской Федерации, на всех установлен 128 тикрейт, также имеется собственная античит система SHUB AAC, гарантируя 100% честность каждого матча.
+                    </h5>
+                </div>
+            </div>
+            <div class = footer>
+                <div class = foot1>
+                    Киберспортивная лига "Shinobi Hub" 2015-2022 ©
+                </div>
+                <div class = foot2>
+                    shinobihub@info.com
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
